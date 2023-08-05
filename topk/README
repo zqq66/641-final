@@ -1,0 +1,5 @@
+Find topk
+python eval2.py --model_file ./PTBdataset/trained-models/compound-pcfg.pt --data_file ./PTBdataset/ptb-test.txt --out_file pred-parse.txt --gold_out_file gold-parse.txt --gpu 0 --topk_file top50_span_trees.pkl --topk 50
+
+Eval topk file
+python evaluation.py --model_file ./PTBdataset/trained-models/compound-pcfg.pt --data_file ./PTBdataset/ptb-test.txt --out_file pred-parse.txt --gold_out_file gold-parse.txt --gpu 0
